@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<Pane fx:id="mainPane" style="-fx-background-color: grey;" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.akhitev.megaplan.report.calculator.controller.MainController">
+    <children>
+        <VBox xmlns:fx="http://javafx.com/fxml" style="-fx-background-color: grey;">
+            <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: white; -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );">Обработчик отчетов MegaPlan</Label>
+            <DatePicker fx:id="bottomBorder" />
+            <Button fx:id="calculateButton" text="Выполнить расчет" onAction="#calculate" />
+            <TableView fx:id="calculatedResultTable" prefHeight="300.0" prefWidth="308.0"/>
+            <TextArea fx:id="calculationResult" editable="false" focusTraversable="false" prefHeight="80.0" prefWidth="308.0" wrapText="true"/>
+        </VBox>
+    </children>
+</Pane>
